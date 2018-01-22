@@ -3,7 +3,7 @@ python:
   - "3.6.4"
 services:
   - postgresql
-before_script: 
+before_install: 
   - psql -c 'create database flask_api;' -U postgres
 install: 
   - "export FLASK_APP=\"run.py\""
