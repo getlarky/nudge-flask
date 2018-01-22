@@ -16,7 +16,7 @@ class DevelopmentConfig(Config):
 class TestingConfig(Config):
     """Configurations for Testing, with a separate test database."""
     TESTING = True
-    SQLALCHEMY_DATABASE_URI = 'postgresql://bromeostasis:password@localhost/test_db'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres@localhost/test_db'
     DEBUG = True
 
 class StagingConfig(Config):
